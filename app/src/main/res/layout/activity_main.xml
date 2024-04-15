@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operaciones Matematicas "
+        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+         />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/avi"
+        android:layout_marginBottom="30dp"    />
+    <EditText
+        android:id="@+id/campo1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:hint="Ingrese el primer numero "
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/campo2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:hint="Ingrese el segundo numero  "
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+
+        >
+
+        <Button
+            android:id="@+id/btn_sum"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="20dp"
+            android:onClick="onClick"
+
+            />
+        <Button
+            android:id="@+id/btn_res"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginLeft="92dp"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/btn_mul"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginLeft="184dp"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/btn_div"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginLeft="278dp"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/label_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
